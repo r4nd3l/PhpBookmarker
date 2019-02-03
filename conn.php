@@ -8,7 +8,7 @@ if (!$conn) {
 
 // sql to create table
 $sql = "CREATE TABLE bookmark (
-website_id INT(11) NOT NULL,
+website_id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 website_name VARCHAR(30) NOT NULL,
 website_link VARCHAR(100) NOT NULL,
 reg_date TIMESTAMP
